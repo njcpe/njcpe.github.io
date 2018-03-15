@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400"
-              rel="stylesheet">
+	      <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400" rel="stylesheet"> 
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
          body, html {
              height: 100%;
@@ -10,13 +11,13 @@
          }
 
          .bgimg {
-             <!--background-image: Url('/w3images/forestbridge.jpg')-->
+
              height: 100%;
              background-position: center;
              background-size: cover;
              position: relative;
-             color: blue;
-             font-family: "Roboto",sans-serif;
+             color: black;
+	           font-family: 'Roboto', sans-serif;	
              font-size: 25px;
          }
 
@@ -46,52 +47,21 @@
          }
         </style>
     </head>
-<body>
+    <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Noah Johnson</p>
-  </div>
-  <div class="middle">
-    <h1>under construction, don't panic</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-  <div class="bottomleft">
-    <p>URI CPE 2018</p>
-  </div>
-</div>
+        <div class="bgimg">
+            <div class="topleft">
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Mar 22, 2018 00:00:00").getTime();
+            </div>
+            <div class="middle">
+                <i>Noah Johnson - URI CPE 2018 <br/><br/></i>
+                <i class="fa fa-circle-o-notch fa-spin" style="font-size:26px"></i>
+                <h3>under construction</h3>
+            </div>
+            <div class="bottomleft">
+            </div>
+        </div>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
 
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    // If the count down is over, write some text
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-</script>
-
-</body>
+    </body>
 </html>
