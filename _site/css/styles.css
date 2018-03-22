@@ -1,0 +1,236 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  font-weight: 300;
+  margin: 0;
+}
+a {}
+
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.thinn {
+  font-weight: 300;
+}
+.thicc {
+  font-weight: 400;
+}
+.extra-thicc {
+  font-weight: 500;
+}
+.italic {
+  font-style: italic; 
+}
+
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  color: #030202;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+  color: #212121;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color: #212121;
+  margin: 0;
+  text-align: left;
+}
+.profile-img {
+  border-radius:10%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: #1976D2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+nav a:hover{
+  background-color: #BBDEFB;
+}
+
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: #EDF2F4;
+}
+.workh3{
+  text-align: left; 
+  font-weight: 500;
+  margin: 0;
+  color: #212121
+}
+.workp{
+  text-align: left;
+  font-style: italic;
+  margin: 0;
+  color: #212121
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Course Experience
+-------------------------*/
+.course {
+  background: #EDF2F4;
+}
+.courseh3 {
+  text-align: left; 
+  font-weight: 500;
+  margin: 0;
+  color: #212121
+}
+.courseh3 ~ p {
+  text-align: left; 
+  font-style: italic;
+  margin: 0;
+  color: #212121
+}
+.course-description {
+  margin-bottom: 25px;
+}
+.course-description p:first-of-type {
+  margin-top: 0;
+}
+
+.github{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Education
+-------------------------*/
+.education {
+  background: #EDF2F4;
+}
+p + h3 {
+  text-align: left;
+  margin-top: 30px;
+}
+
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 10%;
+  }
+  .col-full{
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: left;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+
+.dark-primary-color    { background: #1976D2; }
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #03A9F4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
