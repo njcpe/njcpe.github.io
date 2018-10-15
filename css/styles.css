@@ -89,7 +89,7 @@ header h1, header h2 {
   text-align: left;
 }
 .profile-img {
-  border-radius:10%;
+  border-radius:5%;
 }
 .download {
   position: absolute;
