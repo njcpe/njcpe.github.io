@@ -9,6 +9,22 @@
 -------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 
+:root {
+  --light-shade: #F4F4F3;
+  --light-accent:#D6A24A;
+  --main-brand-color: #B5ADA1;
+  --dark-accent: #8B695A;
+  --dark-shade: #413C46;
+
+  --main-text-color: #413C46;
+  --main-padding: 15px;  
+
+  --title-font: 'PT Serif';
+  --subtitle-font: 'Roboto';
+  --body-font: 'Prompt';
+}
+
+
 
 html {
   box-sizing: border-box;
@@ -17,18 +33,21 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--body-font), sans-serif;
+  color: var(--main-text-color);
   font-weight: 300;
   margin: 0;
 }
 h1, h2 {
-  font-family: 'Roboto', sans-serif;
+  
   font-weight: 500;
 }
 h1 {
+  font-family: var(--title-font), sans-serif;
   font-size: 80px;
 }
 h2 {
+  font-family: var(--subtitle-font), sans-serif;
   font-size: 40px;
   margin-top: 0;
 }
@@ -36,7 +55,6 @@ h3 {
   font-weight: 300;
   margin: 0;
 }
-a {}
 
 a:hover {
   text-decoration: none;
@@ -67,7 +85,8 @@ a:hover {
 /* Download button */
 .btn {
   text-decoration: none;
-  color: #030202;
+  background: var(--light-accent);
+  color: var(--main-text-color);
   padding: 10px;
   display: inline-block;
 }
@@ -76,7 +95,7 @@ a:hover {
 /* Header and Footer
 -------------------------*/
 header, footer {
-  color: #212121;
+  background: var(--light-shade);
 }
 /* header */
 header {
@@ -84,9 +103,8 @@ header {
   position: relative;
 }
 header h1, header h2 {
-  color: #212121;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 .profile-img {
   border-radius:5%;
@@ -100,6 +118,7 @@ header h1, header h2 {
 /* footer */
 footer {
   text-align: center;
+  background: var(--light-accent);
 }
 .contact-info a {
   padding: 10px;
@@ -111,7 +130,7 @@ footer {
 -------------------------*/
 nav {
   text-align: center;
-  background: #1976D2;
+  background: var(--light-accent);
   position: fixed;
   top: 0;
   width: 100%;
@@ -120,33 +139,42 @@ nav {
 nav a {
   display: inline-block;
   padding: 15px 20px;
-  color: #ffffff;
-  text-transform: uppercase;
+  color: var(--main-text-color);
+  text-transform: capitalize;
   text-decoration: none;
   font-weight: 300;
 }
 
 nav a:hover{
-  background-color: #BBDEFB;
+  background-color: var(--dark-accent);
+}
+
+.about {
+  background: var(--light-shade);
+  width: 70%;
+  float: left;
+  padding: 20px;
+  margin-left:15%;
+  margin-right:15%;
 }
 
 
 /* Work Experience
 -------------------------*/
 .work {
-  background: #EDF2F4;
+  background: var(--light-shade);
 }
 .workh3{
   text-align: left; 
   font-weight: 500;
   margin: 0;
-  color: #212121
+  color: var(--main-text-color);
 }
 .workp{
   text-align: left;
   font-style: italic;
   margin: 0;
-  color: #212121
+  color: var(--main-text-color);
 }
 .job-description {
   margin-bottom: 25px;
@@ -158,22 +186,22 @@ nav a:hover{
 /* Course Experience
 -------------------------*/
 .course {
-  background: #EDF2F4;
+  background: var(--light-shade);
 }
 .courseh3 {
   text-align: left; 
   font-weight: 500;
   margin: 0;
-  color: #212121
+  color: var(--main-text-color);
 }
 .courseh3 ~ p {
   text-align: left; 
   font-style: italic;
   margin: 0;
-  color: #212121
+  color: var(--main-text-color);
 }
 .course-description {
-  margin-bottom: 25px;
+  margin-bottom: 2%;
 }
 .course-description p:first-of-type {
   margin-top: 0;
@@ -181,7 +209,7 @@ nav a:hover{
 
 .github{
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--subtitle-font), sans-serif;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
@@ -190,7 +218,7 @@ nav a:hover{
 /* Education
 -------------------------*/
 .education {
-  background: #EDF2F4;
+  background: var(--light-shade);
 }
 p + h3 {
   text-align: left;
@@ -226,11 +254,70 @@ p + h3 {
   }
 }
 
-.dark-primary-color    { background: #1976D2; }
-.default-primary-color { background: #2196F3; }
-.light-primary-color   { background: #BBDEFB; }
-.text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #03A9F4; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #757575; }
-.divider-color         { border-color: #BDBDBD; }
+
+.parallax {
+  /* The image used */
+  background-image: url("/images/NoahJohnson.jpeg");
+
+  /* Set a specific height */
+  min-height: 1000px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  height: 200px;
+  background-color: #fff;
+  word-wrap: normal;
+  word-break: keep-all;
+  font-weight: 700;
+  line-height: 1.125em;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  top: 300px;
+}
+
+.Welcome {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  padding: 5%;
+  justify-content: left;
+}
+
+h5 {
+  color: white;
+  top: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-bottom: 38px;
+  -webkit-margin-before: 50%;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-tap-highlight-colour: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  font-family: var(--title-font);
+  font-size: 31px;
+
+
+}
+
+h5:after,
+h5:before {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: var(--dark-accent);
+  margin: 0 10px;
+}
