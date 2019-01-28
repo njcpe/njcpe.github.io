@@ -28,6 +28,8 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -45,6 +47,7 @@ h1, h2 {
 h1 {
   font-family: var(--title-font), sans-serif;
   font-size: 80px;
+
 }
 h2 {
   font-family: var(--subtitle-font), sans-serif;
@@ -60,7 +63,7 @@ a:hover {
   text-decoration: none;
 }
 .content-wrap {
-  max-width: 950px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 60px 50px;
   overflow: hidden;
@@ -68,29 +71,9 @@ a:hover {
 .uppercase {
   text-transform: uppercase;
 }
-.thinn {
-  font-weight: 300;
-}
-.thicc {
-  font-weight: 400;
-}
-.extra-thicc {
-  font-weight: 500;
-}
 .italic {
   font-style: italic; 
 }
-
-
-/* Download button */
-.btn {
-  text-decoration: none;
-  background: var(--light-accent);
-  color: var(--main-text-color);
-  padding: 10px;
-  display: inline-block;
-}
-
 
 /* Header and Footer
 -------------------------*/
@@ -130,11 +113,25 @@ footer {
 -------------------------*/
 nav {
   text-align: center;
-  background: var(--light-accent);
+  /* background-color: var(--light-accent); */
   position: fixed;
   top: 0;
   width: 100%;
   /*z-index: 100;*/
+  transition:  background-color .6s ease-in-out;
+  transition:  box-shadow .4s ease-in-out;
+
+  /* transition:  */
+
+}
+nav.scroll {
+  background-color: var(--light-accent);
+  /* color: #eef; */
+  box-shadow: 0px 4px 7px #777;
+
+}
+nav a.current {
+  background: black;
 }
 nav a {
   display: inline-block;
@@ -143,6 +140,7 @@ nav a {
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 300;
+
 }
 
 nav a:hover{
@@ -151,30 +149,30 @@ nav a:hover{
 
 .about {
   background: var(--light-shade);
-  width: 70%;
-  float: left;
-  padding: 20px;
-  margin-left:15%;
-  margin-right:15%;
+
 }
+
 
 
 /* Work Experience
 -------------------------*/
-.work {
+.workcontainer {
   background: var(--light-shade);
+  /* display: inline-grid; */
 }
 .workh3{
   text-align: left; 
   font-weight: 500;
+  font-size: 20px;
   margin: 0;
   color: var(--main-text-color);
 }
 .workp{
   text-align: left;
   font-style: italic;
-  margin: 0;
+  margin: 1%;
   color: var(--main-text-color);
+
 }
 .job-description {
   margin-bottom: 25px;
@@ -183,10 +181,59 @@ nav a:hover{
   margin-top: 0;
 }
 
+/*grid stuff*/
+
+.wrapper {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: 10% 22% auto 22%;
+  grid-template-rows: auto auto auto;
+  /* border: 1px solid #000000; */
+
+}
+
+.wrapper-elem{
+
+  background: var(--light-shade);
+  grid-column: 3/5;
+  text-align: justify;  
+  /* border: 1px solid #000000; */
+
+}
+
+.wrapper-title{
+  background: var(--light-shade);
+  grid-column: 1 / 3;
+  /* border: 1px solid #000000; */
+
+}
+
+.wrapper-header{
+  background: var(--light-shade);
+  text-align: left;
+  font-size: 30px;
+  /* border: 1px solid #000000; */
+  
+  grid-column-start: span 4;
+}
+.wrapper-footer{
+  background: var(--light-shade);
+  grid-column: span 4;
+  justify-self: center;
+  /* border: 1px solid #000000; */
+}
+
+.wrapper-gpa{
+  background: var(--light-shade);
+  grid-column: 4/5;
+  text-align: right;
+}
+
 /* Course Experience
 -------------------------*/
 .course {
   background: var(--light-shade);
+  width: 100%;
 }
 .courseh3 {
   text-align: left; 
@@ -219,32 +266,13 @@ nav a:hover{
 -------------------------*/
 .education {
   background: var(--light-shade);
+ 
 }
 p + h3 {
   text-align: left;
   margin-top: 30px;
 }
 
-
-
-/* Media Queries
--------------------------*/
-@media (min-width: 900px) {
-  .col-narrow {
-    width: 30%;
-    float: left;
-  }
-  .col-wide {
-    width: 70%;
-    float: left;
-    padding-left: 10%;
-  }
-  .col-full{
-    width: 100%;
-    float: left;
-    text-align: center;
-  }
-}
 @media (max-width: 899px){
   header {
     text-align: left;
@@ -289,6 +317,7 @@ p + h3 {
   align-items: center;
   padding: 5%;
   justify-content: left;
+
 }
 
 h5 {
@@ -309,6 +338,9 @@ h5 {
   -webkit-box-direction: normal;
   font-family: var(--title-font);
   font-size: 31px;
+  text-shadow: 2px 2px var(--dark-shade);
+
+
 
 
 }
