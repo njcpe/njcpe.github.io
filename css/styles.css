@@ -192,10 +192,37 @@ nav a:hover{
 
 }
 
+.wrapper2 {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  /* border: 1px solid #000000; */
+
+}
 .wrapper-elem{
 
   background: var(--light-shade);
   grid-column: 3/5;
+  text-align: justify;  
+  /* border: 1px solid #000000; */
+
+}
+.wrapper-raw-elem1{
+
+  background: var(--light-shade);
+  grid-column: span 4;
+  font-size: 20px;
+  text-align: justify;  
+  /* border: 1px solid #000000; */
+
+}
+
+.wrapper-raw-elem2{
+
+  background: var(--light-shade);
+  grid-column: span 1;
+  font-size: 20px;
   text-align: justify;  
   /* border: 1px solid #000000; */
 
@@ -280,6 +307,10 @@ p + h3 {
   .profile-img {
     width: 200px;
   }
+}
+
+.honors{
+  background: var(--light-shade);
 }
 
 
