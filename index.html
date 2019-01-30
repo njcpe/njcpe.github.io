@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<head> 
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noah Johnson</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Serif|Prompt|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<body>
+  <a id="back2Top" title="Back to top" href="#">&#10148;</a>
   <!-- // Intro -->
   <div class="parallax">
-    <div
-    class="Welcome" 
-    data-aos="fade-left"
-    data-aos-offset="200"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center"
-    >
+    <div class="Welcome" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true" data-aos-anchor-placement="top-center">
       <h5>Noah Johnson</h5>
-
     </div>
   </div>
-
   <header id="header">
     <nav id="navbar">
-      <div 
-      data-aos="zoom-out"
-      
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out-sine">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-
-      <a href="#work">Professional Experience</a>
-      <a href="#courses">Noteworthy Projects</a>
-      <a href="#honors">Honors</a>
-      <a href="#contact">Contact Me</a>
-      <a href="https://github.com/njohnsoncpe/CV/raw/master/resume.pdf">My CV</a>
+      <div data-aos="zoom-out" data-aos-duration="500" data-aos-easing="ease-in-out-sine">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#work">Professional Experience</a>
+        <a href="#courses">Noteworthy Projects</a>
+        <a href="#honors">Honors</a>
+        <a href="#contact">Contact Me</a>
+        <a href="https://github.com/njohnsoncpe/CV/raw/master/resume.pdf">My CV</a>
       </div>
     </nav>
     <div class="content-wrap">
@@ -54,43 +39,43 @@
       </div>
     </div>
   </header>
-
   <main>
     <section id="about" class="about">
       <div class="content-wrap">
-      <h2>About Me</h2>  
-      <p style="text-align:justify">I am an engineer with a passion for innovation. I am highly interested in computer vision, deep learning, robotics and spaceflight. I am looking to pursue research in deep learning applications within the context of robotics. I am interested in engineering lasting solutions to big picture problems, and making a long term difference in my field. Thanks for taking the time to look at my website, and please feel free to contact me if you feel so inclined!</p> 
+        <h2>About Me</h2>
+        <p style="text-align:justify">I am an engineer with a passion for innovation. I am highly interested in
+          computer vision, deep learning, robotics and spaceflight. I am looking to pursue research in deep learning
+          applications within the context of robotics. I am interested in engineering lasting solutions to big picture
+          problems, and making a long term difference in my field. Thanks for taking the time to look at my website,
+          and please feel free to contact me if you feel so inclined!</p>
       </div>
     </section>
-
-<!-- // Education -->
-  <section id="education" class="education">
-    <div class="content-wrap">
-      <h2>Education</h2>  
-      <!-- School 1 details. -->
-      <div class="wrapper">
-        <div class="wrapper-header">Computer Engineering, B.S.</div>
-        <div class="wrapper-title">
-          <h3 class="italic">University of Rhode Island</h3>
-          <p class="italic">2014-2018</p>
+    <!-- // Education -->
+    <section id="education" class="education">
+      <div class="content-wrap">
+        <h2>Education</h2>
+        <!-- School 1 details. -->
+        <div class="wrapper">
+          <div class="wrapper-header">Computer Engineering, B.S.</div>
+          <div class="wrapper-title">
+            <h3 class="italic">University of Rhode Island</h3>
+            <p class="italic">2014-2018</p>
+          </div>
+          <div class="wrapper-gpa">
+            <p></p>
+            <p>Major GPA: 3.85 / 4.00</p>
+          </div>
+          <div class="wrapper-header">Electrical Engineering, M.S. </div>
+          <div class="wrapper-title">
+            <h3 class="italic">University of Rhode Island</h3>
+            <p class="italic">2018-2020</p>
+          </div>
+          <div class="wrapper-gpa">
+            <p>GPA: 4.00 / 4.00</p>
+          </div>
         </div>
-        <div class="wrapper-gpa">        
-          <p></p>
-          <p>Major GPA: 3.85 / 4.00</p>
-        </div>
-        <div class="wrapper-header">Electrical Engineering, M.S. </div>
-      <div class="wrapper-title">
-        <h3 class="italic">University of Rhode Island</h3>
-        <p class="italic">2018-2020</p>
       </div>
-      <div class="wrapper-gpa">        
-        <p>GPA: 4.00 / 4.00</p>
-      </div>
-    </div>
-      </div>
-      
-  </section>  
-
+    </section>
     <!-- // Work Experience -->
     <section id="work" class="workcontainer">
       <div class="content-wrap">
@@ -103,23 +88,25 @@
             <p class="workp">June 2018 - Present</p>
           </div>
           <div class="wrapper-elem">
-            <p> 
-            My research with the Smart Networking and Computing Lab centers on Neural Network Task Partitioning.
-            I am working to reduce the latency in mobile object recognition applications by optimizing client-server 
-            communication, and exploring load balancing within the context of Neural Networks. 
+            <p>
+              My research with the Smart Networking and Computing Lab centers on Neural Network Task Partitioning.
+              I am working to reduce the latency in mobile object recognition applications by optimizing client-server
+              communication, and exploring load balancing within the context of Neural Networks.
             </p>
           </div>
-        <div class="wrapper-title">
+          <div class="wrapper-title">
             <p class="workh3">Teaching Assistant</p>
             <p class="workp">ECBE Department, URI</p>
             <p class="workp">September 2018 - Present</p>
           </div>
           <div class="wrapper-elem">
-            <p> 
-            Assisted undergraduate students with a variety of topics, from fundamentals of circuit design to Electronic Design Automation Principles using VHDL. Taught several sections of Sophomore and Junior level lab-based classes and hosted office hours to further assist students with tutoring or other miscellaneous tasks. 
+            <p>
+              Assisted undergraduate students with a variety of topics, from fundamentals of circuit design to
+              Electronic Design Automation Principles using VHDL. Taught several sections of Sophomore and Junior level
+              lab-based classes and hosted office hours to further assist students with tutoring or other miscellaneous
+              tasks.
             </p>
           </div>
-
           <div class="wrapper-header">Undergraduate</div>
           <div class="wrapper-title">
             <p class="workh3">VHDL Engineer</p>
@@ -128,12 +115,11 @@
           </div>
           <div class="wrapper-elem">
             <p>
-            Designed and implemented FPGA-based architecture using VHDL and Xilinx Vivado Tools. 
-            Wrote firmware to support control of waveform parameters using C and Vivado SDK. 
-            Assisted in writing PC based application for fine control of waveforms using C#.
+              Designed and implemented FPGA-based architecture using VHDL and Xilinx Vivado Tools.
+              Wrote firmware to support control of waveform parameters using C and Vivado SDK.
+              Assisted in writing PC based application for fine control of waveforms using C#.
             </p>
           </div>
-
           <div class="wrapper-title">
             <p class="workh3">IT Technician</p>
             <p class="workp">URI IT Services</p>
@@ -141,95 +127,106 @@
           </div>
           <div class="wrapper-elem">
             <p>
-            Serviced/optimized hardware and software daily for students/faculty. Honed communication and teamwork skills
+              Serviced/optimized hardware and software daily for students/faculty. Honed communication and teamwork
+              skills
             </p>
           </div>
-        <div class="wrapper-title">
-          <p class="workh3">Production Engineering Intern</p>
-          <p class="workp">Voltserver Inc.</p>
-          <p class="workp">May 2017 - August 2017</p>
-        </div>
-          <div class="wrapper-elem">
-          <p>
-              I worked closely with the electrical engineering and production teams to develop production testing hardware and methodology for safe product deployment. I honed my skills in PCB soldering and circuit diagnosis through RMA repair work.
-              I developed 3 different Windows applications for control of production testing hardware, which allowed for parallel control of several test-benches at once. These test-benches were to be used by the contracted board fabricator to test newly made units. The combination of the test-benches and accompanying software allowed for an over 100% improvement in production testing productivity, due to reduced time to deployment, greater testing accuracy, and reduced labor costs paid to board fabrication facility.          </p>
+          <div class="wrapper-title">
+            <p class="workh3">Production Engineering Intern</p>
+            <p class="workp">Voltserver Inc.</p>
+            <p class="workp">May 2017 - August 2017</p>
           </div>
-        <div class="wrapper-footer">
-          <p>
-            See my complete work history on <a href="https://www.linkedin.com/in/njohnsoncpe/" target="_blank">LinkedIn</a>.
-          </p>
+          <div class="wrapper-elem">
+            <p>
+              I worked closely with the electrical engineering and production teams to develop production testing
+              hardware and methodology for safe product deployment. I honed my skills in PCB soldering and circuit
+              diagnosis through RMA repair work.
+              I developed 3 different Windows applications for control of production testing hardware, which allowed
+              for parallel control of several test-benches at once. These test-benches were to be used by the
+              contracted board fabricator to test newly made units. The combination of the test-benches and
+              accompanying software allowed for an over 100% improvement in production testing productivity, due to
+              reduced time to deployment, greater testing accuracy, and reduced labor costs paid to board fabrication
+              facility.
+            </p>
+          </div>
+          <div class="wrapper-footer">
+            <p>
+              See my complete work history on <a href="https://www.linkedin.com/in/njohnsoncpe/" target="_blank">LinkedIn</a>.
+            </p>
+          </div>
         </div>
-        </div>
-
       </div>
-    </section> 
-
+    </section>
     <!-- // Course Experience -->
     <section id="courses" class="course">
       <div class="content-wrap">
         <h2>Noteworthy Projects</h2>
         <div class="wrapper">
           <div class="wrapper-header">Graduate</div>
-          
           <div class="wrapper-title">
             <h3 class="courseh3">Delta Analysis of Ball Segway System</h3>
             <p>Linear Control Systems</p>
             <p>Fall 2018</p>
           </div>
           <div class="wrapper-elem">
-            <p>Utilized Matlab and Simulink to simulate and analyze stability robustness of the ball segway system discussed in <a href="/pdfs/ele503paper.pdf">this</a> paper. It is worth noting that, while the authors analyze the robustness of their regulator, they do not analyze the stability robustness of the double regulator loop, as done in this final project.</p>
+            <p>Utilized Matlab and Simulink to simulate and analyze stability robustness of the ball segway system
+              discussed in <a href="/pdfs/ele503paper.pdf">this</a> paper. It is worth noting that, while the authors
+              analyze the robustness of their regulator, they do not analyze the stability robustness of the double
+              regulator loop, as done in this final project.</p>
             <p>A PDF of my final project can be found <a href="https://github.com/njohnsoncpe/grad_class_homework/raw/master/ele503/finalProject/pdf/finalCode.pdf">here</a>.</p>
           </div>
-
           <div class="wrapper-title">
             <h3 class="courseh3">Analysis and Simulation of Distributed Computing Auto-balancing Scheme</h3>
             <p>Computer System Modeling</p>
             <p>Fall 2018</p>
           </div>
           <div class="wrapper-elem">
-            <p>Gave seminar on the system dynamics of Distributed Computing, and various load-balancing schema. Presented the findings of the paper "Optimal Service Elasticity in Large-Scale Distributed Systems" (Download from arxiv <a href="https://arxiv.org/pdf/1703.08373.pdf">here</a>), including several simulations and proofs to verify Mukherjee et al.'s findings. Simulated Systems using Event Driven Simulation in C++. Paper written in LaTeX.</p>
+            <p>Gave seminar on the system dynamics of Distributed Computing, and various load-balancing schema.
+              Presented the findings of the paper "Optimal Service Elasticity in Large-Scale Distributed Systems"
+              (Download from arxiv <a href="https://arxiv.org/pdf/1703.08373.pdf">here</a>), including several
+              simulations and proofs to verify Mukherjee et al.'s findings. Simulated Systems using Event Driven
+              Simulation in C++. Paper written in LaTeX.</p>
             <p>A PDF of my final project can be found <a href="https://github.com/njohnsoncpe/grad_class_homework/raw/master/ele549/finalProj/finalPaper.pdf">here</a>.</p>
             <p>My simulation code, as well as the raw Tex files can be found on my <a href="https://github.com/njohnsoncpe/grad_class_homework/tree/master/ele549/finalProj">github</a>.</p>
           </div>
-
-          <div class="wrapper-header">Undergraduate</div>          
-          
+          <div class="wrapper-header">Undergraduate</div>
           <div class="wrapper-title">
             <h3 class="courseh3">Neural Network Driven Computer Vision</h3>
             <p>Embedded System Design</p>
             <p>Spring 2018</p>
           </div>
-          <div class="wrapper-elem"> 
-            <p>Developed Neural Network to identify movement within webcam footage using Tensorflow and Google Inception Engine. More information can be found on my GitHub.</p>
+          <div class="wrapper-elem">
+            <p>Developed Neural Network to identify movement within webcam footage using Tensorflow and Google
+              Inception Engine. More information can be found on my GitHub.</p>
           </div>
-          
           <!-- Course 2 Details -->
           <div class="wrapper-title">
             <h3 class="courseh3">Various Models of Digital Control</h3>
             <p>Digital Control Systems</p>
-            <p>Spring 2018</p> 
+            <p>Spring 2018</p>
           </div>
           <div class="wrapper-elem">
-            <p>Extensively used Matlab, Simulink and lab hardware to derive and implement linear hardware control systems. 
-              Click <a href = "pdfs/ELE459-1.pdf" download>Here</a> to download a copy of my last lab report.</p>
+            <p>Extensively used Matlab, Simulink and lab hardware to derive and implement linear hardware control
+              systems.
+              Click <a href="pdfs/ELE459-1.pdf" download>Here</a> to download a copy of my last lab report.
+            </p>
           </div>
-          
           <!-- Job 3 Details -->
           <div class="wrapper-title">
             <h3 class="courseh3">Fractal Algorithm Optimization</h3>
             <p>ELE 405 - Digital Computer Design</p>
             <p>Fall 2017</p>
-          </div> 
-          <div class="wrapper-elem">
-            <p>Optimized 7 Stage Pipeline CPU written in VHDL for graphics processing. Earned 3rd best optimization metric in class of 30.</p>
           </div>
-        </div>   
+          <div class="wrapper-elem">
+            <p>Optimized 7 Stage Pipeline CPU written in VHDL for graphics processing. Earned 3rd best optimization
+              metric in class of 30.</p>
+          </div>
+        </div>
         <div class='wrapper-footer'>
-          <p class="github col-full">Check out some of my projects on <a href="https://github.com/njohnsoncpe">GitHub</a>.</p> 
-        </div>      
+          <p class="github col-full">Check out some of my projects on <a href="https://github.com/njohnsoncpe">GitHub</a>.</p>
+        </div>
       </div>
     </section>
-
     <section id="honors" class="honors">
       <div class="content-wrap">
         <h2>Honors</h2>
@@ -242,127 +239,65 @@
           </div>
           <div class="wrapper-raw-elem1">
             <p>4th Place, Spring Capstone Summit
-              </p>
+            </p>
           </div>
           <div class="wrapper-raw-elem2">
             <p>May 2018</p>
           </div>
           <div class="wrapper-raw-elem1">
             <p>6th Place, Fall Capstone Symposium
-              </p>
+            </p>
           </div>
           <div class="wrapper-raw-elem2">
             <p>December 2017</p>
           </div>
           <div class="wrapper-raw-elem1">
-              <p>URI Dean's List</p>
-            </div>
-            <div class="wrapper-raw-elem2">
-              <p>Fall 2016 - Spring 2018</p>
-            </div>
-            <div class="wrapper-raw-elem1">
-                <p>Eagle Scout Award</p>
-              </div>
-              <div class="wrapper-raw-elem2">
-                <p>Fall 2014</p>
-              </div>
+            <p>URI Dean's List</p>
           </div>
+          <div class="wrapper-raw-elem2">
+            <p>Fall 2016 - Spring 2018</p>
+          </div>
+          <div class="wrapper-raw-elem1">
+            <p>Eagle Scout Award</p>
+          </div>
+          <div class="wrapper-raw-elem2">
+            <p>Fall 2014</p>
+          </div>
+        </div>
       </div>
-
     </section>
-
   </main>
-
-
-
-
   <!-- // Footer & contact info -->
   <footer id="contact">
-    <div 
-    class="content-wrap text-primary-color" 
-    data-aos="fade-down"
-    data-aos-anchor-placement="top-bottom
-    "
-    >
-      <h2>Feel free to contact me.</h2>
-
+    <div class="content-wrap text-primary-color" data-aos="fade-down" data-aos-anchor-placement="top-bottom
+        ">
+      
       <!-- Social media links. Add or remove any networks. -->
-      <div class="contact-info">
-        <a href="mailto:noah_johnson@uri.edu">noah_johnson@uri.edu</a>
-        <a href="https://github.com/njohnsoncpe">GitHub</a>
-        <a href="https://www.linkedin.com/in/njohnsoncpe/">LinkedIn</a>
+      <div class="wrapper3">
+        <div style="grid-column: span 3;justify-self: center;">  
+          <h2>Feel free to contact me.</h2>
+        </div>
+        <div class="wrapper-raw-elem3">
+          <a href="https://github.com/njohnsoncpe">GitHub</a>
+        </div>
+        <div class="wrapper-raw-elem3">
+          <a href="mailto:noah_johnson@uri.edu">Email me</a>
+        </div>
+        <div class="wrapper-raw-elem3">
+          <a href="https://www.linkedin.com/in/njohnsoncpe/">LinkedIn</a>
+        </div>
+        <div style="grid-column: span 3; justify-self: center">  
+            <p style="font-weight : 300i; font-style : italic;">made on earth by humans</p>
+          </div>
       </div>
-        <p style="font-weight : 300i; font-style : italic;" >made on earth by humans</p>
+      
     </div>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-  <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-  </script>
-  <script>
-  let mainNavLinks = document.querySelectorAll("nav a");
-  let mainSections = document.querySelectorAll("main section")
-  let navbar = document.getElementById("navbar")
-
-  let lastId;
-  let cur = [];
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-    if(fromTop > 1000){
-      navbar.classList.add("scroll");
-    }else{
-    navbar.classList.remove("scroll");
-
-    }
-  });
-  </script>
-  <script>
-  // When the user scrolls down 20px from the top of the document, show the button
-
-let backToTop = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    // backToTop.classList.add()
-    document.getElementById("myBtn").style.display = "block";
-
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}</script>
+  <script src="js/script.js" ></script>
 </body>
+
 </html>

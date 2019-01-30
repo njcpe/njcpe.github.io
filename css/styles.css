@@ -5,55 +5,60 @@
 #EF233C - red
 */
 
+
 /* Global styles
 -------------------------*/
+
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 
 :root {
   --light-shade: #F4F4F3;
-  --light-accent:#D6A24A;
+  --light-accent: #D6A24A;
   --main-brand-color: #B5ADA1;
   --dark-accent: #8B695A;
   --dark-shade: #413C46;
-
   --main-text-color: #413C46;
-  --main-padding: 15px;  
-
+  --main-padding: 15px;
   --title-font: 'PT Serif';
   --subtitle-font: 'Roboto';
   --body-font: 'Prompt';
 }
 
-
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
+
 body {
   font-family: var(--body-font), sans-serif;
   color: var(--main-text-color);
   font-weight: 300;
   margin: 0;
 }
-h1, h2 {
-  
+
+h1,
+h2 {
   font-weight: 500;
 }
+
 h1 {
   font-family: var(--title-font), sans-serif;
   font-size: 80px;
-
 }
+
 h2 {
   font-family: var(--subtitle-font), sans-serif;
   font-size: 40px;
   margin-top: 0;
 }
+
 h3 {
   font-weight: 300;
   margin: 0;
@@ -62,47 +67,63 @@ h3 {
 a:hover {
   text-decoration: none;
 }
+
 .content-wrap {
   max-width: 1050px;
   margin: 0 auto;
   padding: 60px 50px;
   overflow: hidden;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
+
 .italic {
-  font-style: italic; 
+  font-style: italic;
 }
+
 
 /* Header and Footer
 -------------------------*/
-header, footer {
+
+header,
+footer {
   background: var(--light-shade);
 }
+
+
 /* header */
+
 header {
   padding-top: 50px;
   position: relative;
 }
-header h1, header h2 {
+
+header h1,
+header h2 {
   margin: 0;
   text-align: center;
 }
+
 .profile-img {
-  border-radius:5%;
+  border-radius: 5%;
 }
+
 .download {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
+
 /* footer */
+
 footer {
   text-align: center;
   background: var(--light-accent);
 }
+
 .contact-info a {
   padding: 10px;
   display: inline-block;
@@ -111,28 +132,28 @@ footer {
 
 /* Navigation
 -------------------------*/
+
 nav {
   text-align: center;
-  /* background-color: var(--light-accent); */
   position: fixed;
   top: 0;
   width: 100%;
   /*z-index: 100;*/
-  transition:  background-color .6s ease-in-out;
-  transition:  box-shadow .4s ease-in-out;
-
+  transition: background-color .6s ease-in-out;
+  transition: box-shadow .4s ease-in-out;
   /* transition:  */
-
 }
+
 nav.scroll {
   background-color: var(--light-accent);
   /* color: #eef; */
   box-shadow: 0px 4px 7px #777;
-
 }
+
 nav a.current {
   background: black;
 }
+
 nav a {
   display: inline-block;
   padding: 15px 20px;
@@ -140,46 +161,48 @@ nav a {
   text-transform: capitalize;
   text-decoration: none;
   font-weight: 300;
-
 }
 
-nav a:hover{
+nav a:hover {
   background-color: var(--dark-accent);
 }
 
 .about {
   background: var(--light-shade);
-
 }
-
 
 
 /* Work Experience
 -------------------------*/
+
 .workcontainer {
   background: var(--light-shade);
   /* display: inline-grid; */
 }
-.workh3{
-  text-align: left; 
+
+.workh3 {
+  text-align: left;
   font-weight: 500;
   font-size: 20px;
   margin: 0;
   color: var(--main-text-color);
 }
-.workp{
+
+.workp {
   text-align: left;
   font-style: italic;
   margin: 1%;
   color: var(--main-text-color);
-
 }
+
 .job-description {
   margin-bottom: 25px;
 }
+
 .job-description p:first-of-type {
   margin-top: 0;
 }
+
 
 /*grid stuff*/
 
@@ -189,7 +212,6 @@ nav a:hover{
   grid-template-columns: 10% 22% auto 22%;
   grid-template-rows: auto auto auto;
   /* border: 1px solid #000000; */
-
 }
 
 .wrapper2 {
@@ -198,90 +220,109 @@ nav a:hover{
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: auto auto auto;
   /* border: 1px solid #000000; */
-
 }
-.wrapper-elem{
 
+.wrapper3 {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  justify-self: center;
+
+  /* border: 1px solid #000000; */
+}
+
+.wrapper-elem {
   background: var(--light-shade);
   grid-column: 3/5;
-  text-align: justify;  
+  text-align: justify;
   /* border: 1px solid #000000; */
-
 }
-.wrapper-raw-elem1{
 
+.wrapper-raw-elem1 {
   background: var(--light-shade);
   grid-column: span 4;
   font-size: 20px;
-  text-align: justify;  
+  text-align: justify;
   /* border: 1px solid #000000; */
-
 }
 
-.wrapper-raw-elem2{
-
+.wrapper-raw-elem2 {
   background: var(--light-shade);
   grid-column: span 1;
   font-size: 20px;
-  text-align: justify;  
+  text-align: justify;
   /* border: 1px solid #000000; */
-
 }
 
-.wrapper-title{
+.wrapper-raw-elem3 {
+  background: var(--light-accent);
+  grid-column: span 1;
+  font-size: 20px;
+  text-align: center;
+  /* border: 1px solid #000000; */
+}
+
+.wrapper-title {
   background: var(--light-shade);
   grid-column: 1 / 3;
   /* border: 1px solid #000000; */
-
 }
 
-.wrapper-header{
+.wrapper-header {
   background: var(--light-shade);
   text-align: left;
   font-size: 30px;
   /* border: 1px solid #000000; */
-  
   grid-column-start: span 4;
 }
-.wrapper-footer{
+
+.wrapper-footer {
   background: var(--light-shade);
   grid-column: span 4;
   justify-self: center;
   /* border: 1px solid #000000; */
 }
 
-.wrapper-gpa{
+.wrapper-gpa {
   background: var(--light-shade);
   grid-column: 4/5;
   text-align: right;
 }
 
+
 /* Course Experience
 -------------------------*/
+
 .course {
   background: var(--light-shade);
   width: 100%;
 }
+
 .courseh3 {
-  text-align: left; 
+  text-align: left;
   font-weight: 500;
   margin: 0;
   color: var(--main-text-color);
 }
-.courseh3 ~ p {
-  text-align: left; 
+ 
+.courseh3~p {
+  text-align: left;
   font-style: italic;
   margin: 0;
   color: var(--main-text-color);
 }
+
 .course-description {
   margin-bottom: 2%;
 }
+
 .course-description p:first-of-type {
   margin-top: 0;
 }
 
-.github{
+.github {
   text-align: center;
   font-family: var(--subtitle-font), sans-serif;
   font-weight: 400;
@@ -289,40 +330,39 @@ nav a:hover{
   margin-bottom: 0;
 }
 
+
 /* Education
 -------------------------*/
+
 .education {
   background: var(--light-shade);
- 
 }
-p + h3 {
+
+p+h3 {
   text-align: left;
   margin-top: 30px;
 }
 
-@media (max-width: 899px){
+@media (max-width: 899px) {
   header {
     text-align: left;
   }
+
   .profile-img {
     width: 200px;
   }
 }
 
-.honors{
+.honors {
   background: var(--light-shade);
   width: 100%;
-
 }
-
 
 .parallax {
   /* The image used */
   background-image: url("/images/NoahJohnson.jpeg");
-
   /* Set a specific height */
-  min-height: 1000px; 
-
+  min-height: 1000px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -350,7 +390,6 @@ p + h3 {
   align-items: center;
   padding: 5%;
   justify-content: left;
-
 }
 
 h5 {
@@ -372,10 +411,6 @@ h5 {
   font-family: var(--title-font);
   font-size: 31px;
   text-shadow: 2px 2px var(--dark-shade);
-
-
-
-
 }
 
 h5:after,
@@ -387,25 +422,32 @@ h5:before {
   margin: 0 10px;
 }
 
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--light-accent); /* Set a background color */
-  color: var(--main-text-color); /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  border-radius: 2px;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+
+  color: var(--main-text-color);
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
 }
 
-#myBtn:hover {
-  background-color: var(--main-text-color); /* Add a dark-grey background on hover */
+#back2Top:hover {
+  background-color: var(--main-text-color);
+  /* Add a dark-grey background on hover */
   color: var(--light-accent);
   transition: background-color .2s ease-in-out;
-
 }
