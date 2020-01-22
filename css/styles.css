@@ -4,14 +4,9 @@
 #EDF2F4 - blue/white
 #EF233C - red
 */
-
-
 /* Global styles
 -------------------------*/
-
-
 /* apply a natural box layout model to all elements, but allowing components to change */
-
 :root {
   --light-shade: #F4F4F3;
   --light-accent: #D6A24A;
@@ -20,9 +15,9 @@
   --dark-shade: #413C46;
   --main-text-color: #413C46;
   --main-padding: 15px;
-  --title-font: 'PT Serif';
-  --subtitle-font: 'Roboto';
-  --body-font: 'Prompt';
+  --title-font: "PT Serif";
+  --subtitle-font: "Roboto";
+  --body-font: "Prompt";
 }
 
 html {
@@ -83,18 +78,14 @@ a:hover {
   font-style: italic;
 }
 
-
 /* Header and Footer
 -------------------------*/
-
 header,
 footer {
   background: var(--light-shade);
 }
 
-
 /* header */
-
 header {
   padding-top: 50px;
   position: relative;
@@ -116,9 +107,7 @@ header h2 {
   right: 0;
 }
 
-
 /* footer */
-
 footer {
   text-align: center;
   background: var(--light-accent);
@@ -129,24 +118,19 @@ footer {
   display: inline-block;
 }
 
-
 /* Navigation
 -------------------------*/
-
 nav {
   text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
-  /*z-index: 100;*/
-  transition: background-color .6s ease-in-out;
-  transition: box-shadow .4s ease-in-out;
-  /* transition:  */
+  transition: background-color 0.6s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
 }
 
 nav.scroll {
   background-color: var(--light-accent);
-  /* color: #eef; */
   box-shadow: 0px 4px 7px #777;
 }
 
@@ -171,10 +155,8 @@ nav a:hover {
   background: var(--light-shade);
 }
 
-
 /* Work Experience
 -------------------------*/
-
 .workcontainer {
   background: var(--light-shade);
   /* display: inline-grid; */
@@ -203,9 +185,7 @@ nav a:hover {
   margin-top: 0;
 }
 
-
 /*grid stuff*/
-
 .wrapper {
   display: grid;
   grid-gap: 6px;
@@ -229,7 +209,6 @@ nav a:hover {
   grid-template-rows: auto auto auto;
   justify-items: center;
   justify-self: center;
-
   /* border: 1px solid #000000; */
 }
 
@@ -266,8 +245,9 @@ nav a:hover {
 
 .wrapper-title {
   background: var(--light-shade);
-  grid-column: 1 / 3;
-  /* border: 1px solid #000000; */
+  grid-column: 1/5;
+  justify-self: auto;
+  border: 1px solid #000000;
 }
 
 .wrapper-header {
@@ -291,10 +271,8 @@ nav a:hover {
   text-align: right;
 }
 
-
 /* Course Experience
 -------------------------*/
-
 .course {
   background: var(--light-shade);
   width: 100%;
@@ -306,8 +284,8 @@ nav a:hover {
   margin: 0;
   color: var(--main-text-color);
 }
- 
-.courseh3~p {
+
+.courseh3 ~ p {
   text-align: left;
   font-style: italic;
   margin: 0;
@@ -330,15 +308,13 @@ nav a:hover {
   margin-bottom: 0;
 }
 
-
 /* Education
 -------------------------*/
-
 .education {
   background: var(--light-shade);
 }
 
-p+h3 {
+p + h3 {
   text-align: left;
   margin-top: 30px;
 }
@@ -352,7 +328,6 @@ p+h3 {
     width: 200px;
   }
 }
-
 .honors {
   background: var(--light-shade);
   width: 100%;
@@ -372,6 +347,8 @@ p+h3 {
 
 .welcome {
   height: 200px;
+  border-color: 0%;
+  border-width: medium;
   background-color: #fff;
   word-wrap: normal;
   word-break: keep-all;
@@ -381,7 +358,7 @@ p+h3 {
   margin-left: 0;
   margin-bottom: 0;
   box-sizing: border-box;
-  top: 300px;
+  top: 600px;
 }
 
 .Welcome {
@@ -415,7 +392,7 @@ h5 {
 
 h5:after,
 h5:before {
-  content: '';
+  content: "";
   width: 50px;
   height: 2px;
   background: var(--dark-accent);
@@ -448,5 +425,7 @@ h5:before {
   background-color: var(--main-text-color);
   /* Add a dark-grey background on hover */
   color: var(--light-accent);
-  transition: background-color .2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
+
+/*# sourceMappingURL=styles.css.map */
